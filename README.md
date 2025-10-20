@@ -16,7 +16,7 @@
 
 1)```npm install```
 
-2)```npx json-server --watch db.json --port 3001 ```
+2)```npx json-server --watch db.json --port 4000 ```
 
 3)```npm run dev```
 
