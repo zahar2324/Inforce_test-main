@@ -46,24 +46,25 @@ const ProductList: React.FC = () => {
             </tr>
           </thead>
           <tbody>
-             {loading
-    ? <ProductListSkeleton rows={5} />
-    : sorted.map(p => (
-        <tr key={p.id}>
-          <td><Link className="product-list__link" to={`/product/${p.id}`}>{p.name}</Link></td>
-          <td>{p.count}</td>
-          <td>
-            <button
-              className="product-list__delete-btn"
-              onClick={() => setDeleteId(p.id)}
-            >
-              Delete
-            </button>
-          </td>
-        </tr>
-      ))
-  }
-          </tbody>
+  {loading ? (
+    <ProductListSkeleton rows={5} />
+  ) : (
+    sorted.map(p => (
+      <tr key={p.id}>
+        <td><Link className="product-list__link" to={`/product/${p.id}`}>{p.name}</Link></td>
+        <td>{p.count}</td>
+        <td>
+          <button
+            className="product-list__delete-btn"
+            onClick={() => setDeleteId(p.id)}
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+    ))
+  )}
+</tbody>
         </table>
       )}
 
