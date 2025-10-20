@@ -1,0 +1,110 @@
+{
+  "products": [
+    {
+      "name": "Apple iPhone 15 Pro Max",
+      "count": 2,
+      "imageUrl": "data:image/webp;base64,UklGRo4JAABXRUJQVlA4IIIJAAAwMwCdASqYAJgAPkEcjEOioaGVeL48KAQEtIBqBNvb5Tqbw1sbnC36/129z+Vm5q83rwP0X+JD9c9QP+W/4r/qe0f/of9bz/fXH/b9w39eN88/U9EEiI7DEc706wJ5tbQTh7IsTsSfkVi9vjv0bHXj4rwSih36V8cl31vq4Y7inzwHk3M+XQd7RqP/RakxSsAg8ker5hHJnaxos845Zy/oEZvEVHMSZtbcVhUl55xPD91lVxRLuO8IPclKOsFeOosSsTgTQ6ZS8VWnb0khfzHQ2fD73DRqYHHHPqfgeP2cjDRzdXNcF7SUyf+HGEKHqfHs/vRTZso6X80Wj27PF7wKbmjqjz6PryWdYNgyj8y+qZx7SO+4g/5IlArFmT2zGAPulaGdFGZdcF3lPjVAMzJyv1OuwoiaZZKrUi+LtFTG+hfvKm4d8q6FoBXplYt3RdhBrZ3NnlpoCiXNCOXJPnPFV2rKEwpwt0Xe2Y13c8Thu71V85a3pq7oz1gukFsE6n0f8LA/EF7KxevV92xIOpHHpknQgqdspyf9Ht3C1fot/2oAAP7+JJyasg8KnUfv/92TIfhStvd21K22G3Mtq6rh6IeIHglt9bf7+ZzqszPazUEQLCozLpuJBX3IbruS2ClRkzbTM8vGNNUCoseeyWpyZWK71ylSbi7n4yatlFFZ+e+wTpd33lZL4R1MlAH0cHeTV5bb5+ZHvT75jFpQy7zGpFTIllP9WnR/169G03pXVgiGqaZBZxZcjLDz4cMe5wLch2j5tD+Hq6d67197KQAZ/37XssOgeMCKOedjRQ2GeJKDjqEVIhV/DYjoqBquUNeoVPJphFP5/sLkvdb7qfZOBd+j/i4RH8zcmjume01xsiOUTXQ9AFh9aE2QvRVoHqblDMbVHZD2LU0Oy9TlqmBRSlkhb84LP9IQz/cfMBM49Jl4/kVpRHOTWQILLH1Pb+lH7lgoU34HfuEL996Rt/5E4JG5APlHwe5/AW3tDQX5j4xYXUPlk4H3VbXBp+WGKP2kxt20KfYEWkD7aQAP+kDV6/yn/3C8sVikaKJqWCqsA9RxmWRCUhxwBPK/Wwb89iI5TO9l4n/uWMD1j+gS7ok4Pi3yCs7JpeImuZNsB2yZSdqN/apLGUaH23VdXpJbqe4ntnlf2V1OIYFsQNxXIxclVyEvcp9QRdXkJDq2NDYtmq+hmeNN9NENRPq+QWRkuaXOMrtioNKsuPKE7NhPQtU7xlZhDKdsLH/xexDLwbtc1uhkLzRoeBB/Y7WRxYLinf/BQxJSHsSr9v11VkY64ntKLJ7EikoQXfR5tirLr8oWTilxbmsvxcxTqSNBOmEHCpI/+xW6wgPDgBxzghpvwf7XvTfK65Qjz8Kt8vkle3BD1Ygz4oNUGLulCoawsfLCglpST7K3BnE5mKKY57YSg1kgOw9+bY2CyJexl2nLS6sX1cydytoUjAfPirvQJgPf5oS/8WYJMjnNxkg8XHwmq8mkcBAz9NR1O7/LoU+JVYBZ5q0bH1WFHAgVscfXCfkhoqJ/TJBfitPYzmu6nSFJi8Ynsy6D+KkV52VfY4K2QeCELFfq8p2sxIzU2uQ27CMe6cNrA6BECGRwlXc0PrRYL8h1H0eYmJFHDP8Qbr5dTsJNWUFCVRmgrtdUIWcwDO3VGkCxUYXv2pq1XBOXZ2znmkC8DTw4DXxgvFL5ydmyVz2bgRIv2o9aRTGVR0OWFr0p1Tm1my/O11wfiwzxXq0m/N5TGuHbGbYMITWEnnkwsiRSYbr9ZNllLTymKSGGJQioHta7Uweec0AamgseoeICTEDYKX6zqd9FRZSv5xD5UyhEf8g6Fiw95cy3f/mdYt/fANPzitcX/1xdMEv2+Vrp6L6QgCWGw8IYCtngVhi3u50YwrvvzuVvQrJNk5PUNx2Heg2N4xiRFXou+Bqph+fRGYwy7q4C5m2jAjwEe8ewRc+Vec/nr8iEgc1K6pTK0g53VIZs/SPWd6y7QOH7loP6oAJqj9cLFF7+u4KZOfgerO/isRstguK8ALYoXWZB/cqm10JhEi7TRrbwtVUwDQpt6VJs2doZ6S8iLfd7Gfc64zm2OH3ZD/ycMmIVp7gtaB48bwyKS4MsbZrpVU2831RU3283VPUwUT7kCnlhDRr33LFm7lTugpZBZhs2QJtcBDoPeap5dtQguP+5L2w1uFxV7aJU72lWE+JYqhnN+qfdimCcclLGclN/U5yv4Ns3TXrFREwGBgBj5E+D9JAke/CSD31CwbaodEKOjCnQOD2nzF33b3zk4BslW7Wo/MqGrfLsf1sGjv/5Yk8WRgccWPaKR0hyd7aLwqcVmr41W5EGFLnCgYqjdCECQhTcrpdZWxCBCq61AytDIYaPW4087c6uYTeRy0TsnZBd25wTjRCjeFlZ/4eMiA28RKC+IbaE3pslt34gjQr0eOs4u+js0ACIq39HWAKRLu17bgWaRWSAqZNT+CyqWcQe5NhTkQ7hmC9Z4YwOMc7/c4IsAdqLnfkNPn08XNrofELyM2guz5tJkDmQoa/gvwlM2CE2po0RbWQb4yXYEzMawi2FSuwWGtLmViOdPK39OrIZN9GUwIQQ4cAXno2OP00Ld7tMDU9DJMg6sSCRk8qIQ0s4/fEUMjVHwi/FPK+ieKliU9X0uYjIrrOi/k09qRGWecYWo2eERxdNgMTK9z3JFUrtwaUsBOapLR8gqSWcznoUHEiOMRjcdmWU5wcKcSiUs5IE7I2FiKfi0dgnWwW9/lSF/C/JA7qkGiNcYTMjWzYjzA18Xfd8nNSwjzMIBH8h++6POm/1QTYnSh/ylXFplG+7uHV8rGpCWzKFaSYCo2ARwu4X2L+R62Mkho95hJ1y6np4XH8zadgl8A8+T5s3wl7bMmle2J+JNlQBJz9IJAdKAQYSvXChBPhmqGyfeu0xJdZYMRk/dH/SZfv4yH+7QQEgvxacPA4TKZ/01lVxXDP8ngosvo/81Z3StRJSGO1t1ujcoGXOK3uLGLOvQ8Q6G9FVKYrIBGBe+HdbkFjXp9lMIb9A+OZCjgquposAJluVww5gNd4L7UJiSRfycCQ7GTcrUT1Wnwk/00wh7auuMrgFfjjB46bwxMH/gnMHCDEQw6xGmfqEVqA91AW+XXViJdD1QJMUowlF9ug5Jp39VpPPgsLjSd/rIc8tNV07pXNW8uk/9UymD3Du3+tsPx1+2yruV4xjXiUxzBKR+QrU0O5zOXfaEXyXqlY0AAAA",
+      "weight": "221g",
+      "size": {
+        "width": 78.1,
+        "height": 160.8
+      },
+      "comments": [],
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Samsung Galaxy S23 Ultra",
+      "count": 1,
+      "imageUrl": "https://via.placeholder.com/200x200.png?text=Samsung+Galaxy+S23+Ultra",
+      "url": "https://www.samsung.com/galaxy-s23-ultra/",
+      "weight": "228g",
+      "size": {
+        "width": 78.1,
+        "height": 163.4
+      },
+      "comments": []
+    },
+    {
+      "name": "Sony WH-1000XM5555",
+      "count": 4,
+      "imageUrl": "https://via.placeholder.com/200x200.png?text=Sony+WH-1000XM5",
+      "weight": "250g",
+      "size": {
+        "width": 18,
+        "height": 18
+      },
+      "comments": [
+        {
+          "id": 1760968203660,
+          "productId": "3",
+          "description": "cool phone",
+          "date": "10/20/2025, 4:50:03 PM"
+        }
+      ],
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "name": "Nike Air Zoom Pegasus 40",
+      "count": 1,
+      "imageUrl": "https://via.placeholder.com/200x200.png?text=Nike+Air+Zoom+Pegasus+40",
+      "url": "https://www.nike.com/air-zoom-pegasus-40/",
+      "weight": "300g",
+      "size": {
+        "width": 28,
+        "height": 10
+      },
+      "comments": []
+    },
+    {
+      "id": "5",
+      "name": "Dell XPS 13 (2025)",
+      "count": 1,
+      "imageUrl": "https://via.placeholder.com/200x200.png?text=Dell+XPS+13+2025",
+      "url": "https://www.dell.com/xps-13-2025/",
+      "weight": "1.2kg",
+      "size": {
+        "width": 29.5,
+        "height": 19.8
+      },
+      "comments": []
+    },
+    {
+      "id": "cf52",
+      "name": "Dell XPS 13 (2025)",
+      "count": 3,
+      "imageUrl": "https://via.placeholder.com/200x200.png?text=Dell+XPS+13+2025",
+      "weight": "1.2kg",
+      "size": {
+        "width": 29.5,
+        "height": 19.8
+      },
+      "comments": []
+    },
+    {
+      "id": "5b7c",
+      "name": "Xiome",
+      "count": 2,
+      "imageUrl": "https/",
+      "weight": "300",
+      "size": {
+        "width": 106,
+        "height": 102
+      },
+      "comments": []
+    },
+    {
+      "id": "f03d",
+      "name": "Xiome",
+      "count": 13,
+      "imageUrl": "https/",
+      "weight": "300",
+      "size": {
+        "width": 106,
+        "height": 102
+      },
+      "comments": []
+    }
+  ]
+}
