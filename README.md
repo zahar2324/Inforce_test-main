@@ -14,11 +14,11 @@
 
 ### Для запуску проекту потрібно:
 
-1)```npm install
+1)```npm install```
 
-2)npx json-server --watch db.json --port 3001 
+2)```npx json-server --watch db.json --port 3001 ```
 
-3)npm run dev
+3)```npm run dev```
 
 
 
