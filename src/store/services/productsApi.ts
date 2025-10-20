@@ -7,3 +7,4 @@ export const removeProduct = (id: number) => api.delete(`/products/${id}`);
 export const updateProductApi = (product: Product) => api.put<Product>(`/products/${product.id}`, product);
 export const getProduct = (id: number) => api.get<Product>(`/products/${id}`);
 */
+

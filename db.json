@@ -46,20 +46,16 @@
       "comments": []
     },
     {
-      "id": "cf52",
       "name": "Dell XPS 13 (2025)",
-      "count": 3,
+      "count": 4,
       "imageUrl": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS0i4gLWTK1LW4EpXvDQP_Nqab5xbz8EGHP_ODATNo7x4zgGsHKghnhzmrto7KUFa70CBgfJQGAf2OhC-U0pP3kRULBEx57XzbS7d_ip3qdg_S3Z-mDOFoQCHoOtoicTZ513hYuGEE&usqp=CAc",
       "weight": "1.2kg",
       "size": {
         "width": 29.5,
         "height": 19.8
       },
-      "comments": []
+      "comments": [],
+      "id": "cf52"
     }
-    
-    
-    
-    
   ]
 }

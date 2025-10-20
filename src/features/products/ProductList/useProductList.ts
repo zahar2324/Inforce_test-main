@@ -19,12 +19,19 @@ export function useProductList() {
   const [sort, setSort] = useState('name_asc');
 
   const sorted = useMemo(() => {
-    const arr = [...products];
-    if (sort === 'name_asc') arr.sort((a,b) => a.name.localeCompare(b.name));
-    if (sort === 'count_asc') arr.sort((a,b) => a.count - b.count);
-    if (sort === 'count_desc') arr.sort((a,b) => b.count - a.count);
-    return arr;
-  }, [products, sort]);
+  return [...products].sort((a, b) => {
+    switch (sort) {
+      case 'name_asc':
+        return a.name.localeCompare(b.name);
+      case 'count_asc':
+        return a.count - b.count;
+      case 'count_desc':
+        return b.count - a.count;
+      default:
+        return 0;
+    }
+  });
+}, [products, sort]);
 
   const handleDelete = async (id: number) => {
     await dispatch(deleteProduct(id));
