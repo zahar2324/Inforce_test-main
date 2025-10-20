@@ -1,8 +1,9 @@
-/*import { createAsyncThunk } from '@reduxjs/toolkit';
-import { getProducts, createProduct, removeProduct, updateProductApi, getProduct } from '../services/productsApi';
+import { createAsyncThunk } from '@reduxjs/toolkit';
+import  { getProducts, createProduct, removeProduct, updateProductApi, getProduct } from '../services/productsApi';
 import type { Product, Comment } from '../../types/types';
 
 export const fetchProducts = createAsyncThunk('products/fetch', async () => {
+  
   const res = await getProducts();
   return res.data;
 });
@@ -26,8 +27,7 @@ export const addComment = createAsyncThunk(
   'products/addComment',
   async ({ productId, comment }: { productId: number; comment: Comment }) => {
     const prod = (await getProduct(productId)).data;
-    const newComments = [...prod.comments, comment];
-    const updated = { ...prod, comments: newComments };
+    const updated = { ...prod, comments: [...prod.comments, comment] };
     const res = await updateProductApi(updated);
     return res.data;
   }
@@ -37,12 +37,8 @@ export const deleteComment = createAsyncThunk(
   'products/deleteComment',
   async ({ productId, commentId }: { productId: number; commentId: number }) => {
     const prod = (await getProduct(productId)).data;
-    const newComments = prod.comments.filter(c => c.id !== commentId);
-    const updated = { ...prod, comments: newComments };
+    const updated = { ...prod, comments: prod.comments.filter(c => c.id !== commentId) };
     const res = await updateProductApi(updated);
     return res.data;
   }
 );
-*/
-
-

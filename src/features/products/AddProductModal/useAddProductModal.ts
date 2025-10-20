@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useAppDispatch } from '../../../hooks/hooks';
-import { addProduct, updateProduct } from '../../../store/slices/productsSlice';
+import { addProduct, updateProduct } from '../../../store/thunks/productsThunks';
 import type { Product } from '../../../types/types';
 
 export function useAddProductModal(onClose: () => void, product?: Product) {

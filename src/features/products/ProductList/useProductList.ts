@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react';
 import { useAppSelector, useAppDispatch } from '../../../hooks/hooks';
-import { deleteProduct } from '../../../store/slices/productsSlice';
+import { deleteProduct } from '../../../store/thunks/productsThunks';
 import type { Product } from '../../../types/types';
 
 const sortOptions = [

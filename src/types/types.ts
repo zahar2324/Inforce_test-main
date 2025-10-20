@@ -19,3 +19,16 @@ export interface Product {
   weight: string;
   comments: Comment[];
 }
+
+
+
+export interface ProductsState {
+  items: Product[];
+  loading: boolean;
+  error?: string;
+}
+
+export const initialState: ProductsState = {
+  items: [],
+  loading: false,
+};

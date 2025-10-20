@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useAppSelector, useAppDispatch } from '../../../hooks/hooks';
-import { fetchProducts, addComment, deleteComment } from '../../../store/slices/productsSlice';
+import { fetchProducts, addComment, deleteComment } from '../../../store/thunks/productsThunks';
 import { api } from '../../../api/api';
 import type { Comment } from '../../../types/types';
 

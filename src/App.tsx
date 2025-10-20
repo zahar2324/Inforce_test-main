@@ -3,7 +3,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import ProductList from './features/products/ProductList/ProductList';
 import ProductDetails from './features/products/ProductDetails/ProductDetails';
 import { useAppDispatch } from './hooks/hooks';
-import { fetchProducts } from './store/slices/productsSlice';
+import { fetchProducts } from './store/thunks/productsThunks';
 
 const App: React.FC = () => {
   const dispatch = useAppDispatch();
@@ -15,7 +15,7 @@ const App: React.FC = () => {
   return ( 
     <div>
       <nav>
-        <Link className='home' to="/">Products</Link>
+        <Link className='home' to="/">Products <span>{`<`}</span></Link>
       </nav>
 
       <Routes>
