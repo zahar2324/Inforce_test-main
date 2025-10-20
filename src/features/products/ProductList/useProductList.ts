@@ -1,41 +1,31 @@
-import { useState, useMemo } from 'react';
+import { useMemo } from 'react';
 import { useAppSelector, useAppDispatch } from '../../../hooks/hooks';
 import { deleteProduct } from '../../../store/thunks/productsThunks';
 import type { Product } from '../../../types/types';
+import { SORT_OPTIONS, SORT_LABELS, type SortOption } from '../../../constants/sortOptions';
 
-const sortOptions = [
-  { value: 'name_asc', label: 'Name (A-Z)' },
-  { value: 'count_asc', label: 'Count (Asc)' },
-  { value: 'count_desc', label: 'Count (Desc)' }
-];
-
-export function useProductList() {
+export function useProductList(sort: SortOption) {
   const products = useAppSelector(s => s.products.items);
   const loading = useAppSelector(s => s.products.loading);
   const dispatch = useAppDispatch();
 
-  const [showAdd, setShowAdd] = useState(false);
-  const [deleteId, setDeleteId] = useState<number | null>(null);
-  const [sort, setSort] = useState('name_asc');
-
   const sorted = useMemo(() => {
-  return [...products].sort((a, b) => {
-    switch (sort) {
-      case 'name_asc':
-        return a.name.localeCompare(b.name);
-      case 'count_asc':
-        return a.count - b.count;
-      case 'count_desc':
-        return b.count - a.count;
-      default:
-        return 0;
-    }
-  });
-}, [products, sort]);
+    return [...products].sort((a, b) => {
+      switch (sort) {
+        case SORT_OPTIONS.NAME_ASC:
+          return a.name.localeCompare(b.name);
+        case SORT_OPTIONS.COUNT_ASC:
+          return a.count - b.count;
+        case SORT_OPTIONS.COUNT_DESC:
+          return b.count - a.count;
+        default:
+          return 0;
+      }
+    });
+  }, [products, sort]);
 
   const handleDelete = async (id: number) => {
     await dispatch(deleteProduct(id));
-    setDeleteId(null);
   };
 
   const validateProduct = (product: Product) => {
@@ -45,18 +35,10 @@ export function useProductList() {
     return true;
   };
 
-  return {
-    products,
-    loading,
-    showAdd,
-    setShowAdd,
-    deleteId,
-    setDeleteId,
-    sort,
-    setSort,
-    sorted,
-    handleDelete,
-    sortOptions,
-    validateProduct,
-  };
+  const sortOptions = Object.entries(SORT_LABELS).map(([value, label]) => ({
+    value: value as SortOption,
+    label,
+  }));
+
+  return { products, loading, sorted, handleDelete, validateProduct, sortOptions };
 }

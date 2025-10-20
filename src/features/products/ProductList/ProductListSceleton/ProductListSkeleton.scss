@@ -1,0 +1,22 @@
+.product-list__skeleton-row {
+  td {
+    padding: 10px;
+  }
+}
+
+.skeleton {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.skeleton-text {
+  width: 80%;
+  height: 16px;
+}
+
+.skeleton-button {
+  width: 60px;
+  height: 24px;
+  border-radius: 4px;
+}

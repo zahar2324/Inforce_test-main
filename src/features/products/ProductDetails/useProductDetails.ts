@@ -2,12 +2,11 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useAppSelector, useAppDispatch } from '../../../hooks/hooks';
 import { fetchProducts, addComment, deleteComment } from '../../../store/thunks/productsThunks';
-import { api } from '../../../api/api';
+
 import type { Comment } from '../../../types/types';
 
 export function useProductDetails() {
   const { id } = useParams<{ id: string }>();
-  const productId = Number(id);
   const dispatch = useAppDispatch();
 
   const products = useAppSelector(s => s.products.items);
@@ -17,13 +16,17 @@ export function useProductDetails() {
   const [showEdit, setShowEdit] = useState(false);
   const [newComment, setNewComment] = useState('');
 
-  useEffect(() => {
+  /*useEffect(() => {
     const fetchProduct = async () => {
+    try {
       const res = await api.get(`/products/${productId}`);
       if (!res.data) console.error('Продукт не знайдено!');
-    };
-    fetchProduct();
-  }, [productId]);
+    } catch (err: any) {
+      console.error('Помилка при завантаженні продукту:', err.message);
+    }
+  };
+  fetchProduct();
+  }, [productId]);*/
 
   useEffect(() => {
     if (products.length === 0 && !loading) dispatch(fetchProducts());
