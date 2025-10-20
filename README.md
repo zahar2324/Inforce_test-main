@@ -1,3 +1,27 @@
+# Product Management App
+
+Тестове завдання — React + TypeScript додаток для управління продуктами з можливістю додавання, редагування, видалення та коментування.
+
+## 🚀 Технології
+
+- React 19 + TypeScript  
+- Redux Toolkit (state management)  
+- React Router (навігація)  
+- Axios (HTTP запити)  
+- SASS/SCSS (стилізація)  
+- JSON Server (mock backend)  
+- Vite (bundler)
+
+### Для запуску проекту потрібно:
+
+1)```npm install
+
+2)npx json-server --watch db.json --port 3001 
+
+3)npm run dev
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
