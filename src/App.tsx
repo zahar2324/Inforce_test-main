@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import ProductList from './features/products/ProductList';
-import ProductDetails from './features/products/ProductDetails';
+import ProductList from './features/products/ProductList/ProductList';
+import ProductDetails from './features/products/ProductDetails/ProductDetails';
 import { useAppDispatch } from './hooks/hooks';
-import { fetchProducts } from './features/products/productsSlice';
+import { fetchProducts } from './store/slices/productsSlice';
 
 const App: React.FC = () => {
   const dispatch = useAppDispatch();
@@ -15,7 +15,7 @@ const App: React.FC = () => {
   return ( 
     <div>
       <nav>
-        <Link to="/">Products</Link>
+        <Link className='home' to="/">Products</Link>
       </nav>
 
       <Routes>
