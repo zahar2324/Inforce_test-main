@@ -1,80 +1,108 @@
-
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
+  background: radial-gradient(circle at top left, #1e293b, #0f172a);
+  color: #e2e8f0;
+  min-height: 100vh;
 }
 
 h1, h2, h3 {
   margin: 10px 0;
+  color: #06b6d4;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
-  background: white;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(6px);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 th, td {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
+  padding: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
   text-align: left;
 }
 
 th {
-  background-color: #f0f0f0;
+  background-color: rgba(148, 163, 184, 0.1);
+  color: #8b5cf6;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.5px;
 }
 
-/* styles.css або App.scss */
+tr:hover {
+  background-color: rgba(255,255,255,0.05);
+  transition: 0.2s;
+}
+
+
 nav {
-  background-color: #1976d2;
-  padding: 10px 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background: linear-gradient(90deg, #8b5cf6, #06b6d4);
+  padding: 12px 24px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 nav .home {
   color: white;
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: none;
-  padding: 6px 12px;
-  border-radius: 4px;
-  background-color: #1565c0;
-  transition: 0.2s;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: rgba(255,255,255,0.1);
+  transition: all 0.25s ease-in-out;
 }
 
 nav .home:hover {
-  background-color: #0d47a1;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  background-color: rgba(255,255,255,0.25);
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
 }
-
 
 
 button {
   cursor: pointer;
-  padding: 6px 12px;
-  margin: 2px;
+  padding: 8px 16px;
+  margin: 4px;
   border: none;
-  border-radius: 4px;
-  background-color: #1976d2;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #06b6d4, #3b82f6);
   color: white;
-  transition: 0.2s;
+  font-weight: 500;
+  transition: all 0.3s;
 }
 
 button:hover {
-  background-color: #1565c0;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  box-shadow: 0 0 12px rgba(139, 92, 246, 0.5);
 }
 
 input, select {
-  padding: 6px;
+  padding: 8px;
   margin: 4px 0;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.05);
+  color: #e2e8f0;
+  transition: 0.2s;
 }
 
-a{
+input:focus, select:focus {
+  border-color: #06b6d4;
+  outline: none;
+  box-shadow: 0 0 8px #06b6d4;
+}
+
+a {
   text-decoration: none;
-  color: #000;
+  color: #06b6d4;
+}
+
+a:hover {
+  color: #8b5cf6;
 }

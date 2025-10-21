@@ -57,16 +57,23 @@
       "id": "cf52"
     },
     {
-      "id": "a259",
       "name": "Apple iPhone 14",
-      "count": 3,
+      "count": 5,
       "imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQjKSNcgAuAmJRqeIsJ-c6W1zk76Wkj61lLWi7BwuWGJV_S-8ECXSiCBJElwrv1hfSDjzZxIg9CtHukcWs0eg1p6oC5OLVw1qNGhW0VKuytZOn1QwVEQdTSV4DCiHSOmk5Z1s3HKqc&usqp=CAc",
       "weight": "200",
       "size": {
         "width": 11,
         "height": 43
       },
-      "comments": []
+      "comments": [
+        {
+          "id": 1761065970766,
+          "productId": "a259",
+          "description": "too expensive",
+          "date": "10/21/2025, 7:59:30 PM"
+        }
+      ],
+      "id": "a259"
     }
   ]
 }
