@@ -2,8 +2,7 @@ import React from 'react';
 import { useAddProductModal } from './useAddProductModal';
 import './AddProductModal.scss';
 import type { AddProductModalProps } from '../../../types/ui';
-
-
+import { sanitizeInput, validateProductName } from '../../../utils/validation';
 
 const AddProductModal: React.FC<AddProductModalProps> = ({ onClose, product }) => {
   const {
@@ -18,6 +17,15 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ onClose, product }) =
     handleNumberChange
   } = useAddProductModal(onClose, product);
 
+  const handleConfirm = () => {
+
+    if (!validateProductName(name)) {
+      alert('Invalid product name (1-100 characters, letters, numbers, -_.() allowed)');
+      return;
+    }
+    handleSubmit();
+  };
+
   return (
     <div className="modal-overlay">
       <div className="modal">
@@ -26,7 +34,7 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ onClose, product }) =
 
         <div className="modal__form">
           <label>Name:
-            <input value={name} onChange={e => setName(e.target.value)} />
+            <input value={name} onChange={e => setName(sanitizeInput(e.target.value))} />
           </label>
 
           <label>Count:
@@ -39,11 +47,11 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ onClose, product }) =
           </label>
 
           <label>Image URL:
-            <input value={imageUrl} onChange={e => setImageUrl(e.target.value)} />
+            <input value={imageUrl} onChange={e => setImageUrl(sanitizeInput(e.target.value))} />
           </label>
 
           <label>Weight:
-            <input value={weight} onChange={e => setWeight(e.target.value)} />
+            <input value={weight} onChange={e => setWeight(sanitizeInput(e.target.value))} />
           </label>
 
           <label>Width:
@@ -66,7 +74,7 @@ const AddProductModal: React.FC<AddProductModalProps> = ({ onClose, product }) =
         </div>
 
         <div className="modal__buttons">
-          <button className="btn btn--confirm" onClick={handleSubmit}>Confirm</button>
+          <button className="btn btn--confirm" onClick={handleConfirm}>Confirm</button>
           <button className="btn btn--cancel" onClick={onClose}>Cancel</button>
         </div>
       </div>

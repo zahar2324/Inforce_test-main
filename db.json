@@ -58,19 +58,19 @@
     },
     {
       "name": "Apple iPhone 14",
-      "count": 5,
-      "imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQjKSNcgAuAmJRqeIsJ-c6W1zk76Wkj61lLWi7BwuWGJV_S-8ECXSiCBJElwrv1hfSDjzZxIg9CtHukcWs0eg1p6oC5OLVw1qNGhW0VKuytZOn1QwVEQdTSV4DCiHSOmk5Z1s3HKqc&usqp=CAc",
+      "count": 7,
+      "imageUrl": "https:&#x2F;&#x2F;encrypted-tbn1.gstatic.com&#x2F;shopping?q=tbn:ANd9GcQjKSNcgAuAmJRqeIsJ-c6W1zk76Wkj61lLWi7BwuWGJV_S-8ECXSiCBJElwrv1hfSDjzZxIg9CtHukcWs0eg1p6oC5OLVw1qNGhW0VKuytZOn1QwVEQdTSV4DCiHSOmk5Z1s3HKqc&usqp=CAc",
       "weight": "200",
       "size": {
-        "width": 11,
+        "width": 12,
         "height": 43
       },
       "comments": [
         {
-          "id": 1761065970766,
+          "id": 1761316521152,
           "productId": "a259",
-          "description": "too expensive",
-          "date": "10/21/2025, 7:59:30 PM"
+          "description": "cool phone",
+          "date": "10/24/2025, 5:35:21 PM"
         }
       ],
       "id": "a259"

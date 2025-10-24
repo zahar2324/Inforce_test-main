@@ -2,7 +2,7 @@ import React from 'react';
 import './ProductListSkeleton.scss';
 
 interface ProductListSkeletonProps {
-  rows?: number; // кількість рядків скелетона
+  rows?: number; 
 }
 
 const ProductListSkeleton: React.FC<ProductListSkeletonProps> = ({ rows = 5 }) => {

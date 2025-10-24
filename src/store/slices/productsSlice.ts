@@ -1,4 +1,4 @@
-// src/store/slices/productsSlice.ts
+
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
 import type { Product } from '../../types/types';
@@ -32,7 +32,7 @@ const productsSlice = createSlice({
   reducers: {},
   extraReducers: builder => {
     builder
-    // Fetch products
+  
       .addCase(fetchProducts.pending, state => {
         state.loading = true;
         state.error = undefined;
@@ -46,7 +46,7 @@ const productsSlice = createSlice({
         state.error = action.payload || action.error.message;
       })
 
-      //  Add product 
+   
       .addCase(addProduct.pending, state => {
         state.loading = true;
         state.error = undefined;
@@ -60,7 +60,7 @@ const productsSlice = createSlice({
         state.error = action.payload || action.error.message;
       })
 
-      //Delete product
+    
       .addCase(deleteProduct.pending, state => {
         state.loading = true;
         state.error = undefined;
@@ -74,7 +74,7 @@ const productsSlice = createSlice({
         state.error = action.payload || action.error.message;
       })
 
-      // Update product
+   
       .addCase(updateProduct.pending, state => {
         state.loading = true;
         state.error = undefined;
@@ -88,7 +88,7 @@ const productsSlice = createSlice({
         state.error = action.payload || action.error.message;
       })
 
-      // Add comment 
+    
       .addCase(addComment.pending, state => {
         state.loading = true;
         state.error = undefined;
@@ -102,7 +102,7 @@ const productsSlice = createSlice({
         state.error = action.payload || action.error.message;
       })
 
-      // Delete comment
+  
       .addCase(deleteComment.pending, state => {
         state.loading = true;
         state.error = undefined;

@@ -1,5 +1,7 @@
 import type { Product } from "./types";
 
+
+  
 export interface ConfirmModalProps {
   text: string;
   onCancel: () => void;

@@ -2,7 +2,7 @@ import React from 'react';
 import './ConfirmModal.scss';
 import type { ConfirmModalProps } from '../../../types/ui';
 
-
+ 
 
 const ConfirmModal: React.FC<ConfirmModalProps> = ({ text, onCancel, onConfirm }) => {
   return (
